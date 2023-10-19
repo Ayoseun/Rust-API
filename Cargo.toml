@@ -1,0 +1,17 @@
+[package]
+name = "plebitask_backend"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = { version = "=0.5.0-rc.3", features = ["json"] }
+rocket_codegen = "0.5.0-rc.3"
+rocket_http = "0.5.0-rc.3"
+rocket_prometheus = "0.10.0-rc.3"
+revolt_rocket_okapi = "0.9.1"
+revolt_rocket_okapi_codegen = "0.9.1"
+sqlx = { version = "0.6.2", features = ["runtime-tokio-native-tls", "sqlite"]}
+tokio = { version = "1.20.0", features = ["macros"]}
+dotenvy = "0.15"
